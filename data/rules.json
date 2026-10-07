@@ -1,0 +1,74 @@
+[
+  {
+    "id": "fw-f7614a09",
+    "source": "10.30.41.143/32",
+    "protocol": "TCP",
+    "port": 80,
+    "action": "ALLOW",
+    "description": "Manual policy rule"
+  },
+  {
+    "id": "fw-001",
+    "source": "10.0.0.0/8",
+    "protocol": "TCP",
+    "port": 22,
+    "action": "ALLOW",
+    "description": "Private network SSH"
+  },
+  {
+    "id": "fw-002",
+    "source": "10.0.0.0/8",
+    "protocol": "TCP",
+    "port": 443,
+    "action": "ALLOW",
+    "description": "Private network HTTPS"
+  },
+  {
+    "id": "fw-003",
+    "source": "10.0.0.0/8",
+    "protocol": "UDP",
+    "port": 53,
+    "action": "ALLOW",
+    "description": "Private network DNS"
+  },
+  {
+    "id": "fw-004",
+    "source": "192.168.1.0/24",
+    "protocol": "TCP",
+    "port": 80,
+    "action": "ALLOW",
+    "description": "LAN web traffic"
+  },
+  {
+    "id": "fw-005",
+    "source": "192.168.1.0/24",
+    "protocol": "TCP",
+    "port": 443,
+    "action": "ALLOW",
+    "description": "LAN secure web traffic"
+  },
+  {
+    "id": "fw-006",
+    "source": "192.168.1.0/24",
+    "protocol": "UDP",
+    "port": 53,
+    "action": "ALLOW",
+    "description": "LAN DNS"
+  },
+  {
+    "id": "fw-007",
+    "source": "0.0.0.0/0",
+    "protocol": "TCP",
+    "port": 23,
+    "action": "DENY",
+    "description": "Block insecure Telnet"
+  },
+  {
+    "id": "fw-008",
+    "source": "192.168.1.0/24",
+    "protocol": "TCP",
+    "port": 5432,
+    "action": "DENY",
+    "description": "Keep database private"
+  }
+]
